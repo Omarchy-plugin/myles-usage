@@ -74,6 +74,18 @@ omarchy plugin update --yes
 
 omarchy plugin remove myles.usage --yes
 
+## Installing the whole suite
+
+Every plugin in the suite installs with one command, and updates itself
+automatically:
+
+```bash
+git clone https://github.com/Omarchy-plugin/myles-omarchy-plugins.git
+cd myles-omarchy-plugins && ./install.sh
+```
+
+See [myles-omarchy-plugins](../myles-omarchy-plugins) for the update mechanism.
+
 ## Credits
 
 - Built for [Omarchy](https://omarchy.org).
