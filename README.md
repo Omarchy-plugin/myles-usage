@@ -32,8 +32,18 @@ Idleness is inferred: after `idleThresholdSeconds` with no input, time stops cou
 
 ## Data and privacy
 
-All history is local to your machine. Nothing is uploaded. Backups are plain JSON you write
-yourself, so store them wherever you already trust.
+All history is local to your machine, in a fixed path that does **not** depend on the plugin
+id, so it survives uninstall and reinstall:
+
+```
+~/.local/state/omarchy/usage/
+├── settings.json   # widget settings
+├── stats.json      # activity history
+└── timers.json     # saved timers
+```
+
+Nothing is uploaded. Backups are plain JSON you write yourself, so store them wherever you
+already trust.
 
 ## Network calls
 
